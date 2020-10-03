@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+}
+body {
+    background-image: url(./images/bg.jpg);
+}
+
+.container, .cardsArea{
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+    margin-top: 20px;
+}
+
+hr{
+    color: white;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #090979;
+    margin-bottom: 40px;
+}
+
+#countryName{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+}
+
+#searchCountryBTN {
+    width: 100px;
+    height: 35px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color:#deefff;
+    color: #090979;
+}
+
+#showAllCountriesBTN {
+    width: 200px;
+    height: 35px;
+    border: none;
+    background-color:#deefff;
+    color: #090979;
+}
+
+#searchCountryBTN:hover, #showAllCountriesBTN:hover{
+    box-shadow: 3px 3px #090979;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cardsArea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.card-body{
+    height:100px;
+}
+
+.card{
+    width:23%;
+    margin-bottom: 30px;
+}
+
+.bold{
+    font-weight: 700;
+    color: #3f5efb;
+}
+
+#callForActionBTN{
+    width: 200px;
+    height: 35px;
+    border: none;
+    background-color: #2b6ad8;
+    color: white;
+}
+
+.overflow{
+    height: 125px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 85%;
+    }
+
+    .card{
+        width: 47%;
+    }
+}
